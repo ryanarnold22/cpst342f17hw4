@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Three Four Two Pizza &ndash; Order</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Three Four Two Pizza</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order.html">Order Pizza</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main role="main">
+    <form>
+        <div class="container pad-top-3rem">
+            <!-- Example row of columns -->
+            <div class ="row">
+                <section class="col-md-4" id="pizza-size-container">
+                    <h2>Size matters</h2>
+                    <div class="form-group">
+                    <select name="pizza-size" class="form-control">
+                        <option value="sm">Small ($12.00)</option>
+                        <option value="md">Medium ($16.00)</option>
+                        <option value="lg">Large ($20.00)</option>
+                    </select>
+                    </div>
+            </section>
+
+                <section class="col-md-4 offset-md-2" id="crust-choice-container">
+                    <h2>How do you want it?</h2>
+                    <div class="form-group">
+                        <select name="crust-type" class="form-control">
+                            <option value="thin">Thin ($0.00)</option>
+                            <option value="garlic">Garlic ($0.00)</option>
+                            <option value="ny">New York Style ($0.00)</option>
+                            <option value="deep">Deep Dish ($4.00 extra)</option>
+                        </select>
+                    </div>
+                </section>
+             </div>
+
+            <div class ="row">
+                <section class="col-md-4" id="meat-toppings-container">
+                    <h2>Where's the beef? Or sausage..Or Pepperoni.. You choose!</h2>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input type="checkbox" name="meat-topping-pepperoni" value="pepperoni" class="form-check-input"> Pepperoni
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" name="meat-topping-sausage" value="sausage" class="form-check-input"> Sausage
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" name="meat-topping-beef" value="beef" class="form-check-input"> Beef
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" name="meat-topping-bacon" value="bacon" class="form-check-input"> Bacon
+                        </label>
+                    </div>
+                </section>
+
+                <section class="col-md-4 offset-md-2" id="veggie-toppings-container">
+                    <h2>Pick your "greens"</h2>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" name="veggie-topping-onion" value="onion" class="form-check-input"> Onions
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" name="veggie-topping-gp" value="greenpepper" class="form-check-input"> Green Peppers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" name="veggie-topping-beef" value="mushroom" class="form-check-input"> Mushrooms
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" name="veggie-topping-bacon" value="spinach" class="form-check-input"> Spinach
+                        </label>
+                    </div>
+                </section>
+            </div>
+            <hr>
+
+        </div> <!-- /container -->
+    </form>
+</main>
+
+<footer class="container">
+    <p>&copy; Company 2017</p>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+<script src="js/vendor/popper.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+</body>
+</html>
