@@ -10,7 +10,17 @@
 $(document).ready(function($){
     var pizzaOrder = getOrder();
 
-
+    if (localStorage['pizza_order']) {
+        pizzaOrder = JSON.parse(localStorage['pizza_order']);
+    } else {
+        pizzaOrder = {
+            crust: null,
+            size: null,
+            toppingsMeat: [],
+            toppingsVeggie: []
+        };
+        localStorage.pizza_order = JSON.stringify(pizzaOrder);
+    }
 
     $("#pizza-size").on("change", function(e){
         $("#crust-type-container").removeClass("hidden");
@@ -19,11 +29,12 @@ $(document).ready(function($){
     $("#crust-type").on("change", function(e){
         $(".toppings-container").each(function(){
             $(this).removeClass("hidden");
+
         });
     });
 
     $("#pizza-updater").on("change", function(e){
-        let fieldName = $(this).attr('name');
+        var fieldName = $(this).attr('name');
         pizzaOrder[fieldName] = $(this).val();
         saveOrder(pizzaOrder);
     });
@@ -34,7 +45,7 @@ function createOrder() {
         crust: null,
         size: null,
         toppingsMeat: [],
-        toppingsMisc: []
+        toppingsVeggie: []
     };
 }
 
@@ -43,7 +54,6 @@ function saveOrder(pizzaOrder) {
 }
 
 function getOrder() {
-    return (localStorage['pizza_order'])
-        ? JSON.parse(localStorage['pizza_order'])
+    return (localStorage['pizza_order']) ? JSON.parse(localStorage['pizza_order'])
         : createOrder();
 }
