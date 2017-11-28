@@ -43,7 +43,7 @@
                 <section class="col-md-4" id="pizza-size-container">
                     <h2>Size matters</h2>
                     <div class="form-group">
-                    <select name="pizza-size" class="form-control">
+                    <select name="pizza-size" id="pizza-size" class="form-control pizza-updater">
                         <option disabled selected>Pick your size</option>
                         <option value="sm">Small ($12.00)</option>
                         <option value="md">Medium ($16.00)</option>
@@ -52,10 +52,10 @@
                     </div>
             </section>
 
-                <section class="col-md-4 offset-md-2" id="crust-choice-container">
+                <section class="col-md-4 offset-md-2 hidden" id="crust-type-container">
                     <h2>How do you want it?</h2>
                     <div class="form-group">
-                        <select name="crust-type" class="form-control">
+                        <select name="crust-type" id="crust-type" class="form-control pizza-updater">
                             <option disabled selected>Pick your crust</option>
                             <option value="thin">Thin ($0.00)</option>
                             <option value="garlic">Garlic ($0.00)</option>
@@ -67,7 +67,7 @@
              </div>
 
             <div class ="row">
-                <section class="col-md-4" id="meat-toppings-container">
+                <section class="col-md-4 hidden toppings-container" id="meat-toppings-container">
                     <h2>Where's the beef? Or sausage..Or Pepperoni.. You choose!</h2>
                     <div class="form-check">
                         <label class="form-check-label">
@@ -91,7 +91,7 @@
                     </div>
                 </section>
 
-                <section class="col-md-4 offset-md-2" id="veggie-toppings-container">
+                <section class="col-md-4 offset-md-2 hidden toppings-container" id="veggie-toppings-container">
                     <h2>Pick your "greens"</h2>
                     <div class="form-check">
                         <label class="form-check-label">
